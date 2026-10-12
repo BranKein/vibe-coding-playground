@@ -1,8 +1,8 @@
 # 창고 타이쿤 게임
 
-- 상태: 아이디어 (기획 진행 중)
+- 상태: 구현 중
 - 작성일: 2026-10-12
-- 저장소: (구현 시작 후 링크)
+- 저장소: https://github.com/BranKein/vive-warehouse-tycoon (`projects/warehouse-tycoon`)
 - 주소: `warehouse-tycoon.yeonhyuk.me`
 
 ## 개요

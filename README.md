@@ -12,7 +12,9 @@
 
 ## 프로젝트
 
-아직 구현된 프로젝트가 없습니다. 생기는 대로 이곳에 추가합니다.
+| 프로젝트 | 상태 | 설명 |
+|---|---|---|
+| [warehouse-tycoon](https://github.com/BranKein/vive-warehouse-tycoon) | 구현 중 | 창고를 소재로 한 웹 기반 3D 방치형 타이쿤 게임 |
 
 ## 아이디어
 
@@ -20,7 +22,7 @@
 |---|---|---|
 | [주기적 코딩 문제 생성 및 구독 알림](ideas/periodic-coding-problems.md) | 아이디어 | 코딩·SQL 문제를 주기적으로 만들어 쌓고, 구독자에게 메일로 알립니다 |
 | [AWS 배포용 Terraform 인프라](ideas/aws-terraform-infra.md) | 아이디어 | 다른 프로젝트들을 AWS에 띄우기 위한 Terraform 코드를 한곳에서 관리합니다 |
-| [창고 타이쿤 게임](ideas/warehouse-tycoon.md) | 아이디어 | 창고를 소재로 한 웹 기반 3D 방치형 타이쿤 게임입니다 |
+| [창고 타이쿤 게임](ideas/warehouse-tycoon.md) | 구현 중 | 창고를 소재로 한 웹 기반 3D 방치형 타이쿤 게임입니다 |
 | [프로젝트 박물관 사이트](ideas/project-museum-site.md) | 보류 | 이 저장소의 프로젝트들을 박물관처럼 전시하는 정적 사이트입니다 |
 
 전체 목록과 상태 값의 의미는 [ideas/README.md](ideas/README.md)에 있습니다.
@@ -30,6 +32,7 @@
 ```
 .
 ├── ideas/       # 아이디어와 요구사항 문서
+├── projects/    # 개별 프로젝트 (git submodule)
 ├── AGENT.md     # AI 에이전트가 따르는 작업 지침
 └── CLAUDE.md    # Claude Code 설정 진입점
 ```
