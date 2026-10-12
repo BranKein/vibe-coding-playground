@@ -1,0 +1,28 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+*.swp
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# Interrupted-task progress notes (local only)
+progress/
+
+# Dependencies and build output (for the future static site)
+node_modules/
+dist/
+build/
+.cache/
+
+# Logs
+*.log
