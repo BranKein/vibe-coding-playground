@@ -1,8 +1,8 @@
 # AWS 배포용 Terraform 인프라
 
-- 상태: 아이디어
+- 상태: 구현 중
 - 작성일: 2026-10-12
-- 저장소: `BranKein/vive-infra` (비공개, 사용자가 만들 예정, `projects/infra`). 구현 계획은 `projects/infra/PLAN.md`
+- 저장소: https://github.com/BranKein/vive-infra (비공개, `projects/infra`). 구현 계획은 `projects/infra/PLAN.md`
 
 ## 개요
 

@@ -1,3 +1,6 @@
 [submodule "projects/warehouse-tycoon"]
 	path = projects/warehouse-tycoon
 	url = https://github.com/BranKein/vive-warehouse-tycoon.git
+[submodule "projects/infra"]
+	path = projects/infra
+	url = https://github.com/BranKein/vive-infra.git
