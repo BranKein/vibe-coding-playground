@@ -91,3 +91,4 @@
 
 - 2026-10-12: 문서 구조를 만들고 git 저장소를 초기화했다.
 - 2026-10-12: 첫 프로젝트 `projects/warehouse-tycoon`(저장소 `BranKein/vive-warehouse-tycoon`)의 구현을 시작했다. 서브모듈 등록은 첫 push 뒤에 한다.
+- 2026-10-14: `warehouse-tycoon`의 첫 버전을 마쳤다(마지막으로 업적 시스템). 배포는 사용자가 한다.
