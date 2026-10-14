@@ -2,7 +2,7 @@
 
 - 상태: 아이디어
 - 작성일: 2026-10-12
-- 저장소: (구현 시작 후 링크, 비공개 예정)
+- 저장소: `BranKein/vive-infra` (비공개, 사용자가 만들 예정, `projects/infra`). 구현 계획은 `projects/infra/PLAN.md`
 
 ## 개요
 
@@ -31,6 +31,14 @@
 - **정적 호스팅 구성**: S3 + CloudFront로 한다. HTTPS는 CloudFront와 ACM 인증서로 처리하고, Cloudflare에는 DNS 레코드만 둔다.
 - **주소 체계**: 프로젝트마다 `<프로젝트>.yeonhyuk.me` 형태의 주소를 준다.
 - **저장소**: 비공개로 둔다. 공개 루트 저장소가 비공개 저장소를 서브모듈로 참조하는 형태가 된다.
+
+사용자가 2026-10-14에 정한 내용:
+
+- **첫 대상**: warehouse-tycoon을 S3 + CloudFront로 정적 호스팅하고, 배포는 GitHub Actions로 한다.
+- **배포 시점**: 태그를 달 때만 배포한다.
+- **GitHub Actions의 AWS 인증**: 액세스 키를 쓴다(GitHub Secrets).
+- **저장소 이름**: `vive-infra`.
+- **진행**: 계획만 먼저 세우고, 구현은 사용량 한도가 초기화된 뒤 사용자가 요청하면 시작한다.
 
 ## 미정 사항
 
