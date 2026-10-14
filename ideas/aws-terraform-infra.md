@@ -38,6 +38,7 @@
 - **배포 시점**: 태그를 달 때만 배포한다.
 - **GitHub Actions의 AWS 인증**: 액세스 키를 쓴다(GitHub Secrets).
 - **저장소 이름**: `vive-infra`.
+- **인프라 변경 위치**: 로컬에서는 `bootstrap`만 한 번 apply한다. 그 뒤 plan은 PR에서, apply는 사용자가 GitHub Actions에서 버튼을 눌러 실행한다. 인프라 Actions의 AWS 인증은 OIDC 역할로 한다(warehouse 배포용 액세스 키와 별개).
 - **진행**: 계획만 먼저 세우고, 구현은 사용량 한도가 초기화된 뒤 사용자가 요청하면 시작한다.
 
 ## 미정 사항
