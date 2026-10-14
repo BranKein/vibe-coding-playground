@@ -94,3 +94,4 @@
 - 2026-10-14: `warehouse-tycoon`의 첫 버전을 마쳤다(마지막으로 업적 시스템). 배포는 사용자가 한다.
 - 2026-10-14: 인프라 저장소 `projects/infra`(`BranKein/vive-infra`, 비공개)를 서브모듈로 연결했다. 계획은 그 저장소의 `PLAN.md`.
 - 2026-10-15: 인프라 첫 버전을 마쳤다. `warehouse-tycoon`을 S3 + CloudFront(`warehouse-tycoon.yeonhyuk.me`)로 띄웠고, 배포는 warehouse-tycoon 저장소에 `v*` 태그를 push하면 GitHub Actions가 한다.
+- 2026-10-15: `warehouse-tycoon` v1.0.4를 배포했다. 화물선·화물기도 원자재를 들여오고, 그에 맞춰 밸런스를 다시 맞췄다.
