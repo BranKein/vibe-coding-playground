@@ -3,7 +3,7 @@
 - 상태: 완료
 - 작성일: 2026-10-12
 - 저장소: https://github.com/BranKein/vive-warehouse-tycoon (`projects/warehouse-tycoon`)
-- 주소: `warehouse-tycoon.yeonhyuk.me`
+- 주소: https://warehouse-tycoon.yeonhyuk.me (2026-10-15 배포, `v*` 태그를 push하면 GitHub Actions가 배포)
 
 ## 개요
 

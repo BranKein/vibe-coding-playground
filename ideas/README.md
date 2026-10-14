@@ -8,7 +8,7 @@
 |---|---|---|
 | [프로젝트 박물관 사이트](project-museum-site.md) | 보류 | 루트 저장소의 정적 사이트로 하위 프로젝트들을 전시 |
 | [주기적 코딩 문제 생성 및 구독 알림](periodic-coding-problems.md) | 아이디어 | 코딩·SQL 문제를 주기적으로 만들어 쌓고, 구독자에게 메일로 알림 |
-| [AWS 배포용 Terraform 인프라](aws-terraform-infra.md) | 구현 중 | 다른 프로젝트들을 AWS에 띄우기 위한 Terraform 코드를 한곳에서 관리 |
+| [AWS 배포용 Terraform 인프라](aws-terraform-infra.md) | 완료 | 다른 프로젝트들을 AWS에 띄우기 위한 Terraform 코드를 한곳에서 관리 |
 | [창고 타이쿤 게임](warehouse-tycoon.md) | 완료 | 창고를 소재로 한 웹 기반 3D 방치형 타이쿤 게임 |
 
 ## 작성 규칙
