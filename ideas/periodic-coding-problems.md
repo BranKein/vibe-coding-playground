@@ -3,6 +3,10 @@
 - 상태: 아이디어
 - 작성일: 2026-10-12
 - 저장소: (구현 시작 후 링크)
+- 전시 제목: 주기적 코딩 문제
+- 전시 설명: 코딩·SQL 문제를 주기적으로 만들어 쌓고, 구독한 사람에게 새 문제를 메일로 알린다.
+- 영어 제목: Problem of the Week
+- 영어 설명: Coding and SQL problems made on a schedule, kept in a searchable list, with an email to subscribers for each new one.
 
 ## 개요
 

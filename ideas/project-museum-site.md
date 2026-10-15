@@ -2,7 +2,7 @@
 
 - 상태: 구현 중
 - 작성일: 2026-10-12
-- 주소: https://vive-museum.yeonhyuk.me (예정)
+- 주소: https://vive-museum.yeonhyuk.me (호스팅은 2026-10-16에 만들었고, 첫 배포 v0.0.1은 Secrets 입력 뒤)
 - 저장소: https://github.com/BranKein/vive-museum (`projects/museum`)
 
 ## 개요
