@@ -24,7 +24,7 @@
 | [주기적 코딩 문제 생성 및 구독 알림](ideas/periodic-coding-problems.md) | 아이디어 | 코딩·SQL 문제를 주기적으로 만들어 쌓고, 구독자에게 메일로 알립니다 |
 | [AWS 배포용 Terraform 인프라](ideas/aws-terraform-infra.md) | 완료 | 다른 프로젝트들을 AWS에 띄우기 위한 Terraform 코드를 한곳에서 관리합니다 |
 | [창고 타이쿤 게임](ideas/warehouse-tycoon.md) | 완료 | 창고를 소재로 한 웹 기반 3D 방치형 타이쿤 게임입니다 |
-| [프로젝트 박물관 사이트](ideas/project-museum-site.md) | 기획 중 | 프로젝트들을 박물관처럼 전시하고 방문자 아이디어를 받는 사이트입니다 |
+| [프로젝트 박물관 사이트](ideas/project-museum-site.md) | 아이디어 | 프로젝트들을 박물관처럼 전시하고 방문자 아이디어를 받는 사이트입니다 |
 
 전체 목록과 상태 값의 의미는 [ideas/README.md](ideas/README.md)에 있습니다.
 
