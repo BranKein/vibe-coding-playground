@@ -98,3 +98,4 @@
 - 2026-10-14: 인프라 저장소 `projects/infra`(`BranKein/vive-infra`, 비공개)를 서브모듈로 연결했다. 계획은 그 저장소의 `PLAN.md`.
 - 2026-10-15: 인프라 첫 버전을 마쳤다. `warehouse-tycoon`을 S3 + CloudFront(`warehouse-tycoon.yeonhyuk.me`)로 띄웠고, 배포는 warehouse-tycoon 저장소에 `v*` 태그를 push하면 GitHub Actions가 한다.
 - 2026-10-15: `warehouse-tycoon` v1.0.4를 배포했다. 화물선·화물기도 원자재를 들여오고, 그에 맞춰 밸런스를 다시 맞췄다.
+- 2026-10-15: 박물관 사이트 `projects/museum`(`BranKein/vive-museum`)을 서브모듈로 연결했다. 네 가지 전시관(핀보드, 3D 전시관, 전시 도록, 야간 개장)의 정적 화면까지 만들었고, 전시 정보 자동 수집·방문자 아이디어 함수·배포는 아직이다.

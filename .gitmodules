@@ -4,3 +4,6 @@
 [submodule "projects/infra"]
 	path = projects/infra
 	url = https://github.com/BranKein/vive-infra.git
+[submodule "projects/museum"]
+	path = projects/museum
+	url = https://github.com/BranKein/vive-museum.git
