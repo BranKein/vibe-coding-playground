@@ -100,3 +100,4 @@
 - 2026-10-15: `warehouse-tycoon` v1.0.4를 배포했다. 화물선·화물기도 원자재를 들여오고, 그에 맞춰 밸런스를 다시 맞췄다.
 - 2026-10-15: 박물관 사이트 `projects/museum`(`BranKein/vive-museum`)을 서브모듈로 연결했다. 네 가지 전시관(핀보드, 3D 전시관, 전시 도록, 야간 개장)의 정적 화면까지 만들었고, 전시 정보 자동 수집·방문자 아이디어 함수·배포는 아직이다.
 - 2026-10-16: 박물관 배포 흐름을 만들었다. vive-infra `sites/vive-museum`을 apply했고(`vive-museum.yeonhyuk.me`), 빌드 때 `.gitmodules`·`ideas/`·각 저장소의 `deploy/exhibit.json`으로 전시 목록을 만든다. 방문자 아이디어 함수 코드와 인프라 PR(vive-infra#3)까지 만들었고, bootstrap 권한 apply, Secrets 입력, v0.0.1 태그는 사용자 몫으로 남았다.
+- 2026-10-16: 박물관 v0.0.1을 `vive-museum.yeonhyuk.me`에 배포했다. 방문자 아이디어 쪽(vive-infra#3, bootstrap apply 필요)과 테스트 메일은 아직이다.
