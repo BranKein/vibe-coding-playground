@@ -102,3 +102,4 @@
 - 2026-10-16: 박물관 배포 흐름을 만들었다. vive-infra `sites/vive-museum`을 apply했고(`vive-museum.yeonhyuk.me`), 빌드 때 `.gitmodules`·`ideas/`·각 저장소의 `deploy/exhibit.json`으로 전시 목록을 만든다. 방문자 아이디어 함수 코드와 인프라 PR(vive-infra#3)까지 만들었고, bootstrap 권한 apply, Secrets 입력, v0.0.1 태그는 사용자 몫으로 남았다.
 - 2026-10-16: 박물관 v0.0.1을 `vive-museum.yeonhyuk.me`에 배포했다. 방문자 아이디어 쪽(vive-infra#3, bootstrap apply 필요)과 테스트 메일은 아직이다.
 - 2026-10-16: 박물관 v0.0.2로 방문자 아이디어를 켰다(vive-infra#3 apply, SES 도메인·받는 주소 확인, 테스트 메일과 실제 제출 확인). 하루 50건 상한과 월 5달러 예산 메일을 넣었다. 이어서 이슈용 GitHub 토큰, Turnstile, Cloudflare Web Analytics까지 켰다. SES 샌드박스 해제는 사용자가 신청했고 결과를 기다린다.
+- 2026-10-16: `warehouse-tycoon` v1.0.6을 배포했다. 배포 뒤 박물관 재빌드 신호(`repository_dispatch`)가 실제로 돌아가 박물관에 새 버전이 바로 반영되는 것을 확인했다. 썸네일은 저장소의 `deploy/thumbnail.jpg`를 쓴다.
