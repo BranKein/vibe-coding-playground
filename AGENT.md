@@ -107,3 +107,4 @@
 - 2026-10-16: `warehouse-tycoon` v1.0.6을 배포했다. 배포 뒤 박물관 재빌드 신호(`repository_dispatch`)가 실제로 돌아가 박물관에 새 버전이 바로 반영되는 것을 확인했다. 썸네일은 저장소의 `deploy/thumbnail.jpg`를 쓴다.
 - 2026-10-20: 박물관과 `warehouse-tycoon`에 검색 노출(SEO)을 붙였다(페이지별 제목·설명·canonical, 한영 병기, robots.txt·sitemap.xml, 소유 확인 메타 태그). 박물관 v0.0.4, `warehouse-tycoon` v1.0.7로 배포했고, 사용자가 Google Search Console과 네이버 서치어드바이저에 두 사이트의 소유 확인과 사이트맵 제출을 마쳤다. 앞으로의 웹 프로젝트는 [docs/seo.md](docs/seo.md)를 따른다.
 - 2026-10-20: 애드센스를 위해 루트 소개 사이트 `projects/home`(`BranKein/vive-home`, `yeonhyuk.me`)을 만들고 서브모듈로 연결했다. 인프라는 vive-infra#5(루트 도메인 지원, `sites/home`). 병합·배포 키·애드센스 가입은 사용자 몫이고, 박물관·창고 타이쿤 광고 칸은 그 뒤에 한다.
+- 2026-10-20: `home` v0.0.1을 `yeonhyuk.me`에 배포했다(Cloudflare에 남아 있던 옛 A 레코드는 사용자가 지웠다). 애드센스 게시자 ID와 네이버 소유 확인 값은 아직이다.
