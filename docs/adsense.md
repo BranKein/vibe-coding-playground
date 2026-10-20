@@ -25,6 +25,25 @@
 | `projects/warehouse-tycoon` | 1200px 이상 PC에서 오른쪽 160×600 사이드바(`src/app/adRail.ts`, `vite.config.ts`의 `adSense()`) | `ADSENSE_SLOT_SIDEBAR` |
 | `projects/museum` | 핀보드 카드 사이 광고 카드, 도록·야간 개장 본문 아래 가로 칸. 3D 전시관에는 없음(`scripts/build.mjs`, `shared.js`의 `ads()`) | `ADSENSE_SLOT_INFEED`, `ADSENSE_SLOT_DISPLAY` |
 
+## 현재 상태와 승인 뒤 할 일 (2026-10-20)
+
+**지금 상태**
+- `yeonhyuk.me`(home v0.0.2)에 `ads.txt`와 소유 확인 태그가 올라가 있다. 사용자가 애드센스에서 소유 확인과 심사 신청을 마쳤고, 결과를 기다린다(보통 며칠~2~4주, 메일로 옴).
+- 박물관·`warehouse-tycoon`의 광고 칸 코드는 각 저장소 main에 push했지만 **배포하지 않았다.** 두 저장소에는 아직 `ADSENSE_*` 변수가 없어서 배포해도 광고가 나오지 않는다.
+
+**심사에 떨어지면**: 사유를 받아 보완한다. "콘텐츠 부족"이면 home의 `/now`나 소개 글을 늘리고 다시 신청한다.
+
+**심사에 붙으면** (사용자가 새 대화에서 "애드센스 심사 붙었어"라고 하면 여기부터):
+
+| 순서 | 누가 | 할 일 |
+|---|---|---|
+| 1 | 사용자 | 애드센스 **광고 → 사이트별 → 자동 광고** 끄기 |
+| 2 | 사용자 | **개인 정보 보호 및 메시지**에서 유럽 동의 메시지 켜기 |
+| 3 | 사용자 | **광고 → 광고 단위 기준 → 디스플레이 광고**로 광고 단위 3개를 만들고 ID 전달: 박물관 핀보드용, 박물관 도록·야간용, 창고 타이쿤 사이드바용 |
+| 4 | 에이전트 | `gh variable set`으로 입력. `BranKein/vive-museum`: `ADSENSE_CLIENT=ca-pub-6463808305479933`, `ADSENSE_SLOT_INFEED`(핀보드), `ADSENSE_SLOT_DISPLAY`(도록·야간). `BranKein/vive-warehouse-tycoon`: `ADSENSE_CLIENT`(같은 값), `ADSENSE_SLOT_SIDEBAR` |
+| 5 | 에이전트 | 사용자에게 확인받고 배포 태그 push: 박물관 `v0.0.5`, `warehouse-tycoon` `v1.0.8`(그 사이 다른 배포가 있었으면 다음 번호) |
+| 6 | 에이전트 | 배포 뒤 실제 사이트에서 스크립트·칸이 들어갔는지, 콘솔 에러가 없는지 확인. 실제 광고가 채워지기까지는 몇 시간 걸릴 수 있다 |
+
 ## 사용자가 할 일
 
 1. 애드센스에서 광고 단위(디스플레이 광고)를 칸마다 만들고 ID를 에이전트에게 전달 → 에이전트가 Variables 입력.
