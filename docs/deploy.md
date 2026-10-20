@@ -53,6 +53,7 @@ v* 태그 push
 1. vive-infra에서 `sites/warehouse-tycoon`을 `sites/<이름>`으로 복사하고 바꾼다: `main.tf`의 `name`, `variables.tf`의 기본값, `versions.tf`의 backend `key`(`sites/<이름>.tfstate`)와 `Stack` 태그.
 2. 프로젝트 저장소에 `deploy/site.json`을 만들고, 기준본 `deploy.yml`을 복사해 `env.SITE`를 바꾼다. 테스트·빌드 명령과 빌드 폴더(`dist/`)가 다르면 그 단계도 맞춘다.
 3. 프로젝트 README에 배포 방법(태그 push)을 적는다.
+   - 공개하는 웹 프로젝트면 [seo.md](seo.md)의 체크리스트도 함께 적용한다.
 4. vive-infra 변경은 브랜치에 올리고 PR을 만들어 plan 결과까지 확인한다. **main 병합은 실제 AWS·DNS를 만들기 때문에 사용자가 한다.**
 
 사용자가 할 일 (에이전트는 하지 않는다):
@@ -62,15 +63,9 @@ v* 태그 push
 3. 프로젝트 저장소에 위 표의 Secrets·Variables 입력.
 4. 첫 태그 push(또는 에이전트에게 맡김).
 
-## 검색 노출 (SEO, 2026-10-20)
+## 검색 노출 (SEO)
 
-박물관과 `warehouse-tycoon`에 먼저 붙였다. 새 프로젝트도 같은 것을 챙긴다.
-
-- `index.html`(또는 각 페이지)에 제목, `description`, `canonical`, OG 태그(`og:image`는 절대 주소), 필요하면 JSON-LD를 둔다. 문구는 `deploy/exhibit.json`의 한영 제목·설명을 재사용한다.
-- 한 주소에 한국어와 영어를 함께 적는다. 검색엔진은 `lang` 속성보다 실제 글자로 언어를 판단하므로 이것으로 두 언어 검색에 모두 걸린다. `lang`은 `ko`. 언어별 주소와 hreflang은 쓰지 않는다.
-- 화면이 JS나 canvas로만 그려지면, 검색엔진이 읽을 수 있는 실제 글자(로딩 화면의 소개, 빌드 때 미리 채운 목록 등)를 HTML에 둔다. 숨김 텍스트로 두지 않는다.
-- `robots.txt`와 `sitemap.xml`을 사이트 루트에 둔다.
-- 소유 확인은 사이트마다 "URL 접두어" 속성으로 하고, HTML 태그 값을 위 Variables에 넣으면 빌드가 메타 태그로 넣는다. 등록과 값 입력, sitemap 제출은 사용자가 한다(Google Search Console, 네이버 서치어드바이저).
+공개하는 웹 프로젝트는 배포를 붙일 때 [seo.md](seo.md)대로 검색 노출도 붙인다. 소유 확인 값은 위 Variables 표의 `GOOGLE_SITE_VERIFICATION`, `NAVER_SITE_VERIFICATION`.
 
 ## 운영 규칙
 
