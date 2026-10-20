@@ -7,6 +7,7 @@
 | 아이디어 | 상태 | 한 줄 설명 |
 |---|---|---|
 | [프로젝트 박물관 사이트](project-museum-site.md) | 구현 중 | 하위 프로젝트들을 썸네일로 전시하고 방문자 아이디어를 받는 정적 사이트 (`vive-museum.yeonhyuk.me`) |
+| [루트 도메인 소개 사이트](home-site.md) | 아이디어 | `yeonhyuk.me` 첫 화면. 소개·프로젝트 링크·개인정보처리방침, 애드센스 등록과 ads.txt의 자리 |
 | [iKeyboard·iMouse](ikeyboard-imouse.md) | 아이디어 | 카메라로 책상 위 손동작을 읽어 가상 키보드·마우스 입력으로 바꾸는 실험 |
 | [주기적 코딩 문제 생성 및 구독 알림](periodic-coding-problems.md) | 아이디어 | 코딩·SQL 문제를 주기적으로 만들어 쌓고, 구독자에게 메일로 알림 |
 | [AWS 배포용 Terraform 인프라](aws-terraform-infra.md) | 완료 | 다른 프로젝트들을 AWS에 띄우기 위한 Terraform 코드를 한곳에서 관리 |
