@@ -40,7 +40,7 @@ v* 태그 push
 | 저장소 | Secrets | Variables |
 |---|---|---|
 | vive-infra | `CLOUDFLARE_API_TOKEN` (`yeonhyuk.me` DNS 편집만) | `AWS_PLAN_ROLE_ARN`, `AWS_APPLY_ROLE_ARN`, `TF_STATE_BUCKET` (bootstrap 출력) |
-| 각 프로젝트 | `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY` (IAM 사용자 `deploy-<이름>`의 키), `INFRA_REPO_TOKEN` | `AWS_REGION`(`ap-northeast-2`), `S3_BUCKET`, `CLOUDFRONT_DISTRIBUTION_ID` (사이트 apply 출력) |
+| 각 프로젝트 | `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY` (IAM 사용자 `deploy-<이름>`의 키), `INFRA_REPO_TOKEN` | `AWS_REGION`(`ap-northeast-2`), `S3_BUCKET`, `CLOUDFRONT_DISTRIBUTION_ID` (사이트 apply 출력), `GOOGLE_SITE_VERIFICATION`·`NAVER_SITE_VERIFICATION` (검색엔진 소유 확인, 선택) |
 
 `INFRA_REPO_TOKEN`은 fine-grained PAT다. 대상 저장소는 vive-infra 하나, 권한은 Contents: Read and write, Actions: Read. 프로젝트마다 따로 발급해도 되고 같은 토큰을 써도 된다.
 
@@ -61,6 +61,16 @@ v* 태그 push
 2. IAM 콘솔에서 `deploy-<이름>`의 액세스 키 발급.
 3. 프로젝트 저장소에 위 표의 Secrets·Variables 입력.
 4. 첫 태그 push(또는 에이전트에게 맡김).
+
+## 검색 노출 (SEO, 2026-10-20)
+
+박물관과 `warehouse-tycoon`에 먼저 붙였다. 새 프로젝트도 같은 것을 챙긴다.
+
+- `index.html`(또는 각 페이지)에 제목, `description`, `canonical`, OG 태그(`og:image`는 절대 주소), 필요하면 JSON-LD를 둔다. 문구는 `deploy/exhibit.json`의 한영 제목·설명을 재사용한다.
+- 한 주소에 한국어와 영어를 함께 적는다. 검색엔진은 `lang` 속성보다 실제 글자로 언어를 판단하므로 이것으로 두 언어 검색에 모두 걸린다. `lang`은 `ko`. 언어별 주소와 hreflang은 쓰지 않는다.
+- 화면이 JS나 canvas로만 그려지면, 검색엔진이 읽을 수 있는 실제 글자(로딩 화면의 소개, 빌드 때 미리 채운 목록 등)를 HTML에 둔다. 숨김 텍스트로 두지 않는다.
+- `robots.txt`와 `sitemap.xml`을 사이트 루트에 둔다.
+- 소유 확인은 사이트마다 "URL 접두어" 속성으로 하고, HTML 태그 값을 위 Variables에 넣으면 빌드가 메타 태그로 넣는다. 등록과 값 입력, sitemap 제출은 사용자가 한다(Google Search Console, 네이버 서치어드바이저).
 
 ## 운영 규칙
 
