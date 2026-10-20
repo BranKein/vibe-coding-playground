@@ -16,13 +16,14 @@
 |---|---|---|
 | [warehouse-tycoon](https://github.com/BranKein/vive-warehouse-tycoon) | 완료 | 창고를 소재로 한 웹 기반 3D 방치형 타이쿤 게임. [플레이하기](https://warehouse-tycoon.yeonhyuk.me) |
 | infra (비공개) | 완료 | 프로젝트들을 AWS에 띄우는 Terraform 코드 |
+| [home](https://github.com/BranKein/vive-home) | 구현 중 | `yeonhyuk.me` 첫 화면. 만든 사람과 프로젝트 소개 |
 | [museum](https://github.com/BranKein/vive-museum) | 구현 중 | 이 저장소의 프로젝트들을 네 가지 전시관으로 둘러보는 박물관 사이트 |
 
 ## 아이디어
 
 | 아이디어 | 상태 | 설명 |
 |---|---|---|
-| [루트 도메인 소개 사이트](ideas/home-site.md) | 아이디어 | `yeonhyuk.me` 첫 화면으로, 만든 사람과 프로젝트들을 소개합니다 |
+| [루트 도메인 소개 사이트](ideas/home-site.md) | 구현 중 | `yeonhyuk.me` 첫 화면으로, 만든 사람과 프로젝트들을 소개합니다 |
 | [iKeyboard·iMouse](ideas/ikeyboard-imouse.md) | 아이디어 | 카메라로 책상 위 손동작을 읽어 가상 키보드·마우스 입력으로 바꾸는 실험입니다 |
 | [주기적 코딩 문제 생성 및 구독 알림](ideas/periodic-coding-problems.md) | 아이디어 | 코딩·SQL 문제를 주기적으로 만들어 쌓고, 구독자에게 메일로 알립니다 |
 | [AWS 배포용 Terraform 인프라](ideas/aws-terraform-infra.md) | 완료 | 다른 프로젝트들을 AWS에 띄우기 위한 Terraform 코드를 한곳에서 관리합니다 |

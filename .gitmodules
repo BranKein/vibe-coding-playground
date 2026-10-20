@@ -7,3 +7,6 @@
 [submodule "projects/museum"]
 	path = projects/museum
 	url = https://github.com/BranKein/vive-museum.git
+[submodule "projects/home"]
+	path = projects/home
+	url = https://github.com/BranKein/vive-home.git

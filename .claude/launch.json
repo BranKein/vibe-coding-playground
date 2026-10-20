@@ -29,6 +29,20 @@
         "projects/museum"
       ],
       "port": 5191
+    },
+    {
+      "name": "home",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "5193",
+        "--bind",
+        "::",
+        "--directory",
+        "projects/home/dist"
+      ],
+      "port": 5193
     }
   ]
 }
