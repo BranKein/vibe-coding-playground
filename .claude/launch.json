@@ -17,6 +17,21 @@
       "port": 5187
     },
     {
+      "name": "warehouse-tycoon-cloud",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "projects/warehouse-tycoon",
+        "run",
+        "dev",
+        "--",
+        "--port",
+        "5173",
+        "--strictPort"
+      ],
+      "port": 5173
+    },
+    {
       "name": "museum",
       "runtimeExecutable": "python3",
       "runtimeArgs": [
