@@ -1,47 +1,54 @@
 # vive-coding-playground
 
-바이브 코딩으로 만드는 작은 프로젝트들을 모아두는 저장소입니다.
+**English** | [한국어](README.ko.md)
 
-떠오른 아이디어를 먼저 글로 적어두고, 그중 만들고 싶은 것을 AI 코딩 에이전트(Claude Code)와 함께 구현합니다. 구현한 프로젝트는 각자 독립된 저장소로 두고, 이 저장소에서는 git submodule로 참조합니다.
+A home for small projects built by vibe coding.
 
-## 진행 방식
+Ideas are written down first, and the ones worth building are implemented together with an AI coding agent (Claude Code). Each finished project lives in its own repository and is referenced here as a git submodule.
 
-1. **아이디어 기록**: 아이디어와 요구사항을 [`ideas/`](ideas/)에 문서로 적습니다.
-2. **구현**: 만들기로 한 아이디어는 별도 저장소에서 구현합니다. 에이전트가 계획을 세우고 작업을 나눠 진행합니다.
-3. **연결**: 완성된 프로젝트를 이 저장소에 서브모듈로 추가합니다.
+You can browse everything built so far at the [Vibe Museum](https://vive-museum.yeonhyuk.me).
 
-## 프로젝트
+| [Warehouse Tycoon](https://warehouse-tycoon.yeonhyuk.me/en/) | [Vibe Museum](https://vive-museum.yeonhyuk.me) |
+|---|---|
+| ![Warehouse Tycoon](https://raw.githubusercontent.com/BranKein/vive-warehouse-tycoon/main/deploy/thumbnail.jpg) | ![Vibe Museum](https://raw.githubusercontent.com/BranKein/vive-museum/main/docs/screenshots/pinboard-en.jpg) |
 
-| 프로젝트 | 상태 | 설명 |
+## How it works
+
+1. **Write the idea down**: ideas and requirements go into [`ideas/`](ideas/) as documents.
+2. **Build it**: an idea chosen for building is implemented in its own repository. The agent plans the work and splits it up.
+3. **Link it**: the finished project is added here as a submodule.
+
+## Projects
+
+| Project | Status | Description |
 |---|---|---|
-| [warehouse-tycoon](https://github.com/BranKein/vive-warehouse-tycoon) | 완료 | 창고를 소재로 한 웹 기반 3D 방치형 타이쿤 게임. [플레이하기](https://warehouse-tycoon.yeonhyuk.me) |
-| infra (비공개) | 완료 | 프로젝트들을 AWS에 띄우는 Terraform 코드 |
-| [home](https://github.com/BranKein/vive-home) | 구현 중 | `yeonhyuk.me` 첫 화면. 만든 사람과 프로젝트 소개 |
-| [museum](https://github.com/BranKein/vive-museum) | 구현 중 | 이 저장소의 프로젝트들을 네 가지 전시관으로 둘러보는 박물관 사이트 |
+| [warehouse-tycoon](https://github.com/BranKein/vive-warehouse-tycoon) | Done | A web-based 3D idle tycoon game about warehouses. [Play](https://warehouse-tycoon.yeonhyuk.me/en/) |
+| infra (private) | Done | Terraform code that puts the projects on AWS |
+| [home](https://github.com/BranKein/vive-home) | In progress | About the maker and the projects. [yeonhyuk.me](https://yeonhyuk.me) |
+| [museum](https://github.com/BranKein/vive-museum) | In progress | A museum site that shows this repository's projects in four different halls. [Visit](https://vive-museum.yeonhyuk.me) |
 
-## 아이디어
+## Ideas
 
-| 아이디어 | 상태 | 설명 |
+The idea documents are written in Korean.
+
+| Idea | Status | Description |
 |---|---|---|
-| [루트 도메인 소개 사이트](ideas/home-site.md) | 구현 중 | `yeonhyuk.me` 첫 화면으로, 만든 사람과 프로젝트들을 소개합니다 |
-| [iKeyboard·iMouse](ideas/ikeyboard-imouse.md) | 아이디어 | 카메라로 책상 위 손동작을 읽어 가상 키보드·마우스 입력으로 바꾸는 실험입니다 |
-| [주기적 코딩 문제 생성 및 구독 알림](ideas/periodic-coding-problems.md) | 아이디어 | 코딩·SQL 문제를 주기적으로 만들어 쌓고, 구독자에게 메일로 알립니다 |
-| [AWS 배포용 Terraform 인프라](ideas/aws-terraform-infra.md) | 완료 | 다른 프로젝트들을 AWS에 띄우기 위한 Terraform 코드를 한곳에서 관리합니다 |
-| [창고 타이쿤 게임](ideas/warehouse-tycoon.md) | 완료 | 창고를 소재로 한 웹 기반 3D 방치형 타이쿤 게임입니다 |
-| [프로젝트 박물관 사이트](ideas/project-museum-site.md) | 구현 중 | 프로젝트들을 박물관처럼 전시하고 방문자 아이디어를 받는 사이트입니다 |
+| [Home site for the root domain](ideas/home-site.md) | In progress | The front page of `yeonhyuk.me`, introducing the maker and the projects |
+| [iKeyboard & iMouse](ideas/ikeyboard-imouse.md) | Idea | An experiment that reads hand movements on a desk with a camera and turns them into virtual keyboard and mouse input |
+| [Periodic coding problems with subscriptions](ideas/periodic-coding-problems.md) | Idea | Generates coding and SQL problems on a schedule and emails subscribers |
+| [Terraform infrastructure for AWS](ideas/aws-terraform-infra.md) | Done | Keeps the Terraform code that puts the other projects on AWS in one place |
+| [Warehouse tycoon game](ideas/warehouse-tycoon.md) | Done | A web-based 3D idle tycoon game about warehouses |
+| [Project museum site](ideas/project-museum-site.md) | In progress | A site that exhibits the projects like a museum and takes ideas from visitors |
 
-전체 목록과 상태 값의 의미는 [ideas/README.md](ideas/README.md)에 있습니다.
+The full list and the meaning of each status are in [ideas/README.md](ideas/README.md).
 
-## 저장소 구조
+## Repository layout
 
 ```
 .
-├── ideas/       # 아이디어와 요구사항 문서
-├── projects/    # 개별 프로젝트 (git submodule)
-├── AGENT.md     # AI 에이전트가 따르는 작업 지침
-└── CLAUDE.md    # Claude Code 설정 진입점
+├── ideas/       # idea and requirement documents
+├── docs/        # shared docs: deployment, SEO, ads
+├── projects/    # individual projects (git submodules)
+├── AGENT.md     # working rules the AI agent follows
+└── CLAUDE.md    # entry point for Claude Code
 ```
-
-## 앞으로
-
-프로젝트가 어느 정도 모이면, 이 저장소에 정적 사이트를 만들어 프로젝트들을 한곳에서 둘러볼 수 있게 할 계획입니다.

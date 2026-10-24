@@ -21,7 +21,7 @@
 │   ├── deploy.md   # 배포 구조 (GitHub Actions, vive-infra)
 │   ├── seo.md      # 웹 프로젝트의 검색 노출(SEO) 가이드
 │   └── adsense.md  # 광고(AdSense) 가이드
-├── README.md       # 외부 공개용 소개 문서. 프로젝트·아이디어 목록이 바뀌면 함께 갱신한다
+├── README.md       # 외부 공개용 소개 문서(영어). 한국어판은 README.ko.md. 프로젝트·아이디어 목록이 바뀌면 둘 다 갱신한다
 ├── progress/       # 사용량 한도로 중단한 작업의 진행 상황 (필요할 때 생성, git에 올리지 않음)
 └── projects/       # 서브모듈로 참조하는 개별 프로젝트
 ```
