@@ -69,7 +69,7 @@ v* 태그 push
 
 ## 운영 규칙
 
-- 태그는 `vMAJOR.MINOR.PATCH`. 사용자가 버전을 정해 배포를 요청하면 에이전트가 태그를 push하고, 워크플로가 성공했는지와 사이트가 새 빌드를 내보내는지(첫 화면의 `assets/index-*.js` 이름) 확인한다.
+- 태그는 `vMAJOR.MINOR.PATCH`. 사용자가 버전을 정해 배포를 요청하면 에이전트가 태그를 push하고, 워크플로가 성공했는지와 사이트가 새 빌드를 내보내는지(첫 화면의 `assets/index-*.js` 이름. `warehouse-tycoon`은 언어 페이지라 `assets/main-*.js`) 확인한다.
 - 같은 프로젝트의 배포는 한 번에 하나(`concurrency: deploy`). vibe-infra의 apply도 사이트마다 하나씩 돈다.
 - 업로드는 해시가 붙은 `assets/`를 먼저(1년 캐시), `index.html`을 마지막에(캐시 안 함) 올린다. 그래서 CloudFront는 `/`와 `/index.html`만 비운다.
 - 정적 사이트가 아닌 것(서버, DB 등)이 필요해지면 vibe-infra에 새 모듈을 만들고 이 문서에 추가한다.
