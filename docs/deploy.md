@@ -80,5 +80,5 @@ v* 태그 push
 
 - 함수 코드는 프로젝트 저장소에 두고, Terraform은 자리표시 코드로 함수를 만든 뒤 코드는 건드리지 않는다(`ignore_changes`). 프로젝트의 배포 워크플로가 `aws lambda update-function-code`로 올린다. 배포 사용자에게 그 함수만 고칠 권한을 준다.
 - 비밀 값은 SSM SecureString 파라미터로 만들고 값은 `unset`으로 둔다. 실제 값은 사용자가 직접 넣는다.
-- 이름은 `vive-`로 시작한다. apply 역할은 `vive-*` 이름의 DynamoDB, Lambda, 역할, SSM 파라미터, 로그 그룹, EventBridge 규칙과 API Gateway, SES 신원만 다룰 수 있다.
+- 이름은 `vibe-`로 시작한다(2026-10-24 전에 만든 것은 `vive-`). apply 역할은 `vibe-*`, `vive-*` 이름의 DynamoDB, Lambda, 역할, SSM 파라미터, 로그 그룹, EventBridge 규칙과 API Gateway, SES 신원만 다룰 수 있다.
 - apply 역할의 권한을 넓히는 것은 `bootstrap/` 변경이라 사용자가 로컬에서 apply한다. 그 전에는 해당 스택 PR을 병합하지 않는다.
