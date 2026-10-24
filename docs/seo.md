@@ -55,4 +55,4 @@
 3. 태그 push로 배포(요청하면 에이전트가 한다).
 4. 배포 뒤 두 곳에서 소유 확인을 누르고 `sitemap.xml` 제출. 색인까지는 며칠~몇 주 걸린다.
 
-`yeonhyuk.me` 도메인 속성 하나로 묶는 방법도 있지만 Cloudflare DNS TXT 레코드가 필요해 vive-infra를 거쳐야 하므로 쓰지 않는다.
+`yeonhyuk.me` 도메인 속성 하나로 묶는 방법도 있지만 Cloudflare DNS TXT 레코드가 필요해 vibe-infra를 거쳐야 하므로 쓰지 않는다.

@@ -1,4 +1,4 @@
-# vive-coding-playground
+# vibe-coding-playground
 
 **English** | [한국어](README.ko.md)
 
@@ -10,7 +10,7 @@ You can browse everything built so far at the [Vibe Museum](https://vive-museum.
 
 | [Warehouse Tycoon](https://warehouse-tycoon.yeonhyuk.me/en/) | [Vibe Museum](https://vive-museum.yeonhyuk.me) |
 |---|---|
-| ![Warehouse Tycoon](https://raw.githubusercontent.com/BranKein/vive-warehouse-tycoon/main/deploy/thumbnail.jpg) | ![Vibe Museum](https://raw.githubusercontent.com/BranKein/vive-museum/main/docs/screenshots/pinboard-en.jpg) |
+| ![Warehouse Tycoon](https://raw.githubusercontent.com/BranKein/vibe-warehouse-tycoon/main/deploy/thumbnail.jpg) | ![Vibe Museum](https://raw.githubusercontent.com/BranKein/vibe-museum/main/docs/screenshots/pinboard-en.jpg) |
 
 ## How it works
 
@@ -22,10 +22,10 @@ You can browse everything built so far at the [Vibe Museum](https://vive-museum.
 
 | Project | Status | Description |
 |---|---|---|
-| [warehouse-tycoon](https://github.com/BranKein/vive-warehouse-tycoon) | Done | A web-based 3D idle tycoon game about warehouses. [Play](https://warehouse-tycoon.yeonhyuk.me/en/) |
+| [warehouse-tycoon](https://github.com/BranKein/vibe-warehouse-tycoon) | Done | A web-based 3D idle tycoon game about warehouses. [Play](https://warehouse-tycoon.yeonhyuk.me/en/) |
 | infra (private) | Done | Terraform code that puts the projects on AWS |
-| [home](https://github.com/BranKein/vive-home) | In progress | About the maker and the projects. [yeonhyuk.me](https://yeonhyuk.me) |
-| [museum](https://github.com/BranKein/vive-museum) | In progress | A museum site that shows this repository's projects in four different halls. [Visit](https://vive-museum.yeonhyuk.me) |
+| [home](https://github.com/BranKein/vibe-home) | In progress | About the maker and the projects. [yeonhyuk.me](https://yeonhyuk.me) |
+| [museum](https://github.com/BranKein/vibe-museum) | In progress | A museum site that shows this repository's projects in four different halls. [Visit](https://vive-museum.yeonhyuk.me) |
 
 ## Ideas
 

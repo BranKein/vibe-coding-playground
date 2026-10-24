@@ -1,4 +1,4 @@
-# vive-coding-playground
+# vibe-coding-playground
 
 [English](README.md) | **한국어**
 
@@ -10,7 +10,7 @@
 
 | [창고 타이쿤](https://warehouse-tycoon.yeonhyuk.me/ko/) | [바이브 뮤지엄](https://vive-museum.yeonhyuk.me) |
 |---|---|
-| ![창고 타이쿤](https://raw.githubusercontent.com/BranKein/vive-warehouse-tycoon/main/deploy/thumbnail.jpg) | ![바이브 뮤지엄](https://raw.githubusercontent.com/BranKein/vive-museum/main/docs/screenshots/pinboard-ko.jpg) |
+| ![창고 타이쿤](https://raw.githubusercontent.com/BranKein/vibe-warehouse-tycoon/main/deploy/thumbnail.jpg) | ![바이브 뮤지엄](https://raw.githubusercontent.com/BranKein/vibe-museum/main/docs/screenshots/pinboard-ko.jpg) |
 
 ## 진행 방식
 
@@ -22,10 +22,10 @@
 
 | 프로젝트 | 상태 | 설명 |
 |---|---|---|
-| [warehouse-tycoon](https://github.com/BranKein/vive-warehouse-tycoon) | 완료 | 창고를 소재로 한 웹 기반 3D 방치형 타이쿤 게임. [플레이하기](https://warehouse-tycoon.yeonhyuk.me/ko/) |
+| [warehouse-tycoon](https://github.com/BranKein/vibe-warehouse-tycoon) | 완료 | 창고를 소재로 한 웹 기반 3D 방치형 타이쿤 게임. [플레이하기](https://warehouse-tycoon.yeonhyuk.me/ko/) |
 | infra (비공개) | 완료 | 프로젝트들을 AWS에 띄우는 Terraform 코드 |
-| [home](https://github.com/BranKein/vive-home) | 구현 중 | 만든 사람과 프로젝트 소개. [yeonhyuk.me](https://yeonhyuk.me) |
-| [museum](https://github.com/BranKein/vive-museum) | 구현 중 | 이 저장소의 프로젝트들을 네 가지 전시관으로 둘러보는 박물관 사이트. [둘러보기](https://vive-museum.yeonhyuk.me) |
+| [home](https://github.com/BranKein/vibe-home) | 구현 중 | 만든 사람과 프로젝트 소개. [yeonhyuk.me](https://yeonhyuk.me) |
+| [museum](https://github.com/BranKein/vibe-museum) | 구현 중 | 이 저장소의 프로젝트들을 네 가지 전시관으로 둘러보는 박물관 사이트. [둘러보기](https://vive-museum.yeonhyuk.me) |
 
 ## 아이디어
 

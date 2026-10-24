@@ -3,7 +3,7 @@
 - 상태: 구현 중
 - 작성일: 2026-10-12
 - 주소: https://vive-museum.yeonhyuk.me (호스팅은 2026-10-16에 만들었고, 첫 배포 v0.0.1은 Secrets 입력 뒤)
-- 저장소: https://github.com/BranKein/vive-museum (`projects/museum`)
+- 저장소: https://github.com/BranKein/vibe-museum (`projects/museum`)
 
 ## 개요
 
@@ -35,18 +35,18 @@
 ### 저장소 (2026-10-15 사용자 결정)
 
 - 박물관은 별도 저장소 `vive-museum`에 만든다. 다른 프로젝트처럼 루트 저장소의 서브모듈이다. 박물관도 바이브 프로젝트이므로 자기 자신을 다른 프로젝트와 똑같이 전시한다(2026-10-16 사용자 결정, 처음에는 전시하지 않기로 했었다). 썸네일은 전시 도록 화면을 찍은 것이다.
-- 사이트 코드, 방문자 아이디어 함수(Lambda) 코드, 방문자 아이디어 이슈가 모두 이 저장소에 있다. 함수가 쓰는 AWS 자원(API, DB, 메일)은 다른 인프라처럼 vive-infra가 만든다.
+- 사이트 코드, 방문자 아이디어 함수(Lambda) 코드, 방문자 아이디어 이슈가 모두 이 저장소에 있다. 함수가 쓰는 AWS 자원(API, DB, 메일)은 다른 인프라처럼 vibe-infra가 만든다.
 
 ### 주소와 배포 (2026-10-15 사용자 결정)
 
 - 주소는 `vive-museum.yeonhyuk.me`.
-- 배포는 다른 프로젝트와 같은 구조를 쓴다([docs/deploy.md](../docs/deploy.md)). vive-infra에 `sites/vive-museum`을 더하고, `v*` 태그 push로 배포한다. 아래 "자동으로 다시 빌드"는 같은 워크플로를 다른 계기로 부르는 것이다.
+- 배포는 다른 프로젝트와 같은 구조를 쓴다([docs/deploy.md](../docs/deploy.md)). vibe-infra에 `sites/vive-museum`을 더하고, `v*` 태그 push로 배포한다. 아래 "자동으로 다시 빌드"는 같은 워크플로를 다른 계기로 부르는 것이다.
 
 ### 전시 목록 관리: 정보는 프로젝트에, 다시 빌드는 자동 (2026-10-15 사용자 결정, 에이전트 제안의 C안)
 
 - **전시 정보는 각 프로젝트 저장소에 둔다.** `deploy/exhibit.json`에 제목, 한 줄 설명(영어·한국어), 기술 스택, 썸네일 경로, PC 권장 여부를 적는다. (형식은 에이전트 제안)
 - **주소는 따로 적지 않는다.** 배포에 이미 쓰는 `deploy/site.json`의 `subdomain`으로 `https://<subdomain>.yeonhyuk.me`를 만든다. 도메인을 바꾸면 박물관도 따라간다.
-- **목록은 서브모듈 목록에서 온다.** 박물관 빌드가 루트 저장소의 `.gitmodules`에 있는 저장소를 돌며, 각 저장소 main의 `deploy/exhibit.json`을 GitHub에서 읽는다. 서브모듈 갱신 주기와 상관없이 늘 최신 정보를 쓴다. 전시 파일이 없는 저장소(예: 비공개 도구인 vive-infra)는 전시하지 않는다.
+- **목록은 서브모듈 목록에서 온다.** 박물관 빌드가 루트 저장소의 `.gitmodules`에 있는 저장소를 돌며, 각 저장소 main의 `deploy/exhibit.json`을 GitHub에서 읽는다. 서브모듈 갱신 주기와 상관없이 늘 최신 정보를 쓴다. 전시 파일이 없는 저장소(예: 비공개 도구인 vibe-infra)는 전시하지 않는다.
 - **자동으로 다시 빌드한다.** 프로젝트의 deploy 워크플로가 끝날 때 박물관 저장소에 `repository_dispatch`를 보내, 박물관을 다시 빌드·배포한다. 박물관 저장소에 push할 때와 `ideas/`가 바뀔 때도 다시 빌드한다.
 - **썸네일**: 저장소에 이미지를 넣어 두면 그것을 쓴다. 없으면 프로젝트 배포 뒤에 워크플로가 headless 브라우저로 사이트를 찍어 쓴다. 3D(WebGL) 화면은 자동 촬영이 잘 안 나올 수 있어서 직접 넣는 길을 남긴다.
 
@@ -81,7 +81,7 @@
 받기:
 
 - 입력 항목은 **제목, 설명, 이메일(선택)**. 이메일은 나중에 구현됐는지 알려 주기 위한 것이다. 비워 두면 알림 없이 아이디어만 남는다.
-- 사이트의 입력 칸 → 서버리스 함수(API Gateway + Lambda). 함수 코드는 vive-museum 저장소에, AWS 자원은 vive-infra에 둔다.
+- 사이트의 입력 칸 → 서버리스 함수(API Gateway + Lambda). 함수 코드는 vive-museum 저장소에, AWS 자원은 vibe-infra에 둔다.
 - 스팸 방지: Cloudflare Turnstile과 요청 수 제한.
 
 함수가 하는 일 (2026-10-15 사용자 결정: 사용자가 승인한 뒤에 이슈를 만든다):
@@ -126,7 +126,7 @@
 사용자가 해야 할 일 (구현 때 모아서 알린다):
 
 - `vive-museum` 저장소 만들기
-- SES: `yeonhyuk.me` 도메인 인증(DNS 레코드는 vive-infra가 Cloudflare에 만들 수 있다), `yeonhyuk.public@gmail.com` 주소 확인, **샌드박스 해제 신청**(이것을 해야 방문자에게 메일을 보낼 수 있다)
+- SES: `yeonhyuk.me` 도메인 인증(DNS 레코드는 vibe-infra가 Cloudflare에 만들 수 있다), `yeonhyuk.public@gmail.com` 주소 확인, **샌드박스 해제 신청**(이것을 해야 방문자에게 메일을 보낼 수 있다)
 - Cloudflare Turnstile 사이트 키 발급
 - 이슈를 만드는 GitHub 토큰(vive-museum의 Issues 쓰기 권한) 발급. AWS에 비밀 값으로 넣는다
 - 다른 프로젝트들의 deploy 워크플로가 vive-museum에 신호를 보낼 수 있게 토큰 범위 넓히기

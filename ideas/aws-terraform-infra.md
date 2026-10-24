@@ -2,7 +2,7 @@
 
 - 상태: 완료
 - 작성일: 2026-10-12
-- 저장소: https://github.com/BranKein/vive-infra (비공개, `projects/infra`). 구현 계획은 `projects/infra/PLAN.md`
+- 저장소: https://github.com/BranKein/vibe-infra (비공개, `projects/infra`). 구현 계획은 `projects/infra/PLAN.md`
 
 ## 개요
 
@@ -37,8 +37,8 @@
 - **첫 대상**: warehouse-tycoon을 S3 + CloudFront로 정적 호스팅하고, 배포는 GitHub Actions로 한다.
 - **배포 시점**: 태그를 달 때만 배포한다.
 - **GitHub Actions의 AWS 인증**: 액세스 키를 쓴다(GitHub Secrets).
-- **저장소 이름**: `vive-infra`.
-- **인프라 변경 위치**: 로컬에서는 `bootstrap`만 한 번 apply한다. 그 뒤 plan은 PR에서, apply는 main에 push되거나 태그(`<사이트>/<버전>`)가 push되면 GitHub Actions에서 돈다. 프로젝트의 배포 워크플로는 먼저 vive-infra에 그 프로젝트의 사이트 설정을 커밋해 apply를 돌리고, 바뀐 것이 없으면 태그를 달아 돌린다. 인프라 Actions의 AWS 인증은 OIDC 역할로 한다(warehouse 배포용 액세스 키와 별개).
+- **저장소 이름**: `vibe-infra`.
+- **인프라 변경 위치**: 로컬에서는 `bootstrap`만 한 번 apply한다. 그 뒤 plan은 PR에서, apply는 main에 push되거나 태그(`<사이트>/<버전>`)가 push되면 GitHub Actions에서 돈다. 프로젝트의 배포 워크플로는 먼저 vibe-infra에 그 프로젝트의 사이트 설정을 커밋해 apply를 돌리고, 바뀐 것이 없으면 태그를 달아 돌린다. 인프라 Actions의 AWS 인증은 OIDC 역할로 한다(warehouse 배포용 액세스 키와 별개).
 - **진행**: 계획만 먼저 세우고, 구현은 사용량 한도가 초기화된 뒤 사용자가 요청하면 시작한다.
 
 ## 미정 사항

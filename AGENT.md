@@ -1,4 +1,4 @@
-# vive-coding-playground
+# vibe-coding-playground
 
 여러 바이브 코딩 프로젝트의 루트 저장소이자, 에이전트(Claude)의 메인 작업공간이다.
 
@@ -18,7 +18,7 @@
 ├── ideas/          # 아이디어·요구사항 md 파일
 │   └── README.md   # 작성 규칙과 아이디어 목록
 ├── docs/           # 필요할 때만 읽는 공통 문서
-│   ├── deploy.md   # 배포 구조 (GitHub Actions, vive-infra)
+│   ├── deploy.md   # 배포 구조 (GitHub Actions, vibe-infra)
 │   ├── seo.md      # 웹 프로젝트의 검색 노출(SEO) 가이드
 │   └── adsense.md  # 광고(AdSense) 가이드
 ├── README.md       # 외부 공개용 소개 문서(영어). 한국어판은 README.ko.md. 프로젝트·아이디어 목록이 바뀌면 둘 다 갱신한다
@@ -97,18 +97,18 @@
 ## 현재 상태
 
 - 2026-10-12: 문서 구조를 만들고 git 저장소를 초기화했다.
-- 2026-10-12: 첫 프로젝트 `projects/warehouse-tycoon`(저장소 `BranKein/vive-warehouse-tycoon`)의 구현을 시작했다. 서브모듈 등록은 첫 push 뒤에 한다.
+- 2026-10-12: 첫 프로젝트 `projects/warehouse-tycoon`(저장소 `BranKein/vibe-warehouse-tycoon`)의 구현을 시작했다. 서브모듈 등록은 첫 push 뒤에 한다.
 - 2026-10-14: `warehouse-tycoon`의 첫 버전을 마쳤다(마지막으로 업적 시스템). 배포는 사용자가 한다.
-- 2026-10-14: 인프라 저장소 `projects/infra`(`BranKein/vive-infra`, 비공개)를 서브모듈로 연결했다. 계획은 그 저장소의 `PLAN.md`.
+- 2026-10-14: 인프라 저장소 `projects/infra`(`BranKein/vibe-infra`, 비공개)를 서브모듈로 연결했다. 계획은 그 저장소의 `PLAN.md`.
 - 2026-10-15: 인프라 첫 버전을 마쳤다. `warehouse-tycoon`을 S3 + CloudFront(`warehouse-tycoon.yeonhyuk.me`)로 띄웠고, 배포는 warehouse-tycoon 저장소에 `v*` 태그를 push하면 GitHub Actions가 한다.
 - 2026-10-15: `warehouse-tycoon` v1.0.4를 배포했다. 화물선·화물기도 원자재를 들여오고, 그에 맞춰 밸런스를 다시 맞췄다.
-- 2026-10-15: 박물관 사이트 `projects/museum`(`BranKein/vive-museum`)을 서브모듈로 연결했다. 네 가지 전시관(핀보드, 3D 전시관, 전시 도록, 야간 개장)의 정적 화면까지 만들었고, 전시 정보 자동 수집·방문자 아이디어 함수·배포는 아직이다.
-- 2026-10-16: 박물관 배포 흐름을 만들었다. vive-infra `sites/vive-museum`을 apply했고(`vive-museum.yeonhyuk.me`), 빌드 때 `.gitmodules`·`ideas/`·각 저장소의 `deploy/exhibit.json`으로 전시 목록을 만든다. 방문자 아이디어 함수 코드와 인프라 PR(vive-infra#3)까지 만들었고, bootstrap 권한 apply, Secrets 입력, v0.0.1 태그는 사용자 몫으로 남았다.
-- 2026-10-16: 박물관 v0.0.1을 `vive-museum.yeonhyuk.me`에 배포했다. 방문자 아이디어 쪽(vive-infra#3, bootstrap apply 필요)과 테스트 메일은 아직이다.
-- 2026-10-16: 박물관 v0.0.2로 방문자 아이디어를 켰다(vive-infra#3 apply, SES 도메인·받는 주소 확인, 테스트 메일과 실제 제출 확인). 하루 50건 상한과 월 5달러 예산 메일을 넣었다. 이어서 이슈용 GitHub 토큰, Turnstile, Cloudflare Web Analytics까지 켰다. SES 샌드박스 해제는 사용자가 신청했고 결과를 기다린다.
+- 2026-10-15: 박물관 사이트 `projects/museum`(`BranKein/vibe-museum`)을 서브모듈로 연결했다. 네 가지 전시관(핀보드, 3D 전시관, 전시 도록, 야간 개장)의 정적 화면까지 만들었고, 전시 정보 자동 수집·방문자 아이디어 함수·배포는 아직이다.
+- 2026-10-16: 박물관 배포 흐름을 만들었다. vibe-infra `sites/vive-museum`을 apply했고(`vive-museum.yeonhyuk.me`), 빌드 때 `.gitmodules`·`ideas/`·각 저장소의 `deploy/exhibit.json`으로 전시 목록을 만든다. 방문자 아이디어 함수 코드와 인프라 PR(vibe-infra#3)까지 만들었고, bootstrap 권한 apply, Secrets 입력, v0.0.1 태그는 사용자 몫으로 남았다.
+- 2026-10-16: 박물관 v0.0.1을 `vive-museum.yeonhyuk.me`에 배포했다. 방문자 아이디어 쪽(vibe-infra#3, bootstrap apply 필요)과 테스트 메일은 아직이다.
+- 2026-10-16: 박물관 v0.0.2로 방문자 아이디어를 켰다(vibe-infra#3 apply, SES 도메인·받는 주소 확인, 테스트 메일과 실제 제출 확인). 하루 50건 상한과 월 5달러 예산 메일을 넣었다. 이어서 이슈용 GitHub 토큰, Turnstile, Cloudflare Web Analytics까지 켰다. SES 샌드박스 해제는 사용자가 신청했고 결과를 기다린다.
 - 2026-10-16: `warehouse-tycoon` v1.0.6을 배포했다. 배포 뒤 박물관 재빌드 신호(`repository_dispatch`)가 실제로 돌아가 박물관에 새 버전이 바로 반영되는 것을 확인했다. 썸네일은 저장소의 `deploy/thumbnail.jpg`를 쓴다.
 - 2026-10-20: 박물관과 `warehouse-tycoon`에 검색 노출(SEO)을 붙였다(페이지별 제목·설명·canonical, 한영 병기, robots.txt·sitemap.xml, 소유 확인 메타 태그). 박물관 v0.0.4, `warehouse-tycoon` v1.0.7로 배포했고, 사용자가 Google Search Console과 네이버 서치어드바이저에 두 사이트의 소유 확인과 사이트맵 제출을 마쳤다. 앞으로의 웹 프로젝트는 [docs/seo.md](docs/seo.md)를 따른다.
-- 2026-10-20: 애드센스를 위해 루트 소개 사이트 `projects/home`(`BranKein/vive-home`, `yeonhyuk.me`)을 만들고 서브모듈로 연결했다. 인프라는 vive-infra#5(루트 도메인 지원, `sites/home`). 병합·배포 키·애드센스 가입은 사용자 몫이고, 박물관·창고 타이쿤 광고 칸은 그 뒤에 한다.
+- 2026-10-20: 애드센스를 위해 루트 소개 사이트 `projects/home`(`BranKein/vibe-home`, `yeonhyuk.me`)을 만들고 서브모듈로 연결했다. 인프라는 vibe-infra#5(루트 도메인 지원, `sites/home`). 병합·배포 키·애드센스 가입은 사용자 몫이고, 박물관·창고 타이쿤 광고 칸은 그 뒤에 한다.
 - 2026-10-20: `home` v0.0.1을 `yeonhyuk.me`에 배포했다(Cloudflare에 남아 있던 옛 A 레코드는 사용자가 지웠다). 애드센스 게시자 ID와 네이버 소유 확인 값은 아직이다.
 - 2026-10-20: 애드센스 게시자 ID를 `home` v0.0.2(`ads.txt`, 소유 확인 태그)에 넣었고 사용자가 심사를 신청했다. 박물관·`warehouse-tycoon`에는 변수로만 켜지는 광고 칸을 만들어 push했다(배포 전). 승인 뒤 광고 단위 ID를 받아 Variables에 넣고 배포한다.
 - 2026-10-20: `warehouse-tycoon`에 Google 클라우드 저장을 붙였다(서버 없이 플레이어 Drive의 숨김 앱 폴더). Apple(iCloud)도 어댑터 하나로 붙일 수 있게 구조를 잡았다. 실제 Google로 새로고침·기록 삭제·만료·해제까지 시험했고 v1.1.0으로 배포했다. 사용자가 Google 동의 화면을 프로덕션으로 게시해 누구나 연결할 수 있다.

@@ -1,12 +1,12 @@
 [submodule "projects/warehouse-tycoon"]
 	path = projects/warehouse-tycoon
-	url = https://github.com/BranKein/vive-warehouse-tycoon.git
+	url = https://github.com/BranKein/vibe-warehouse-tycoon.git
 [submodule "projects/infra"]
 	path = projects/infra
-	url = https://github.com/BranKein/vive-infra.git
+	url = https://github.com/BranKein/vibe-infra.git
 [submodule "projects/museum"]
 	path = projects/museum
-	url = https://github.com/BranKein/vive-museum.git
+	url = https://github.com/BranKein/vibe-museum.git
 [submodule "projects/home"]
 	path = projects/home
-	url = https://github.com/BranKein/vive-home.git
+	url = https://github.com/BranKein/vibe-home.git

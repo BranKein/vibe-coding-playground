@@ -40,7 +40,7 @@
 | 1 | 사용자 | 애드센스 **광고 → 사이트별 → 자동 광고** 끄기 |
 | 2 | 사용자 | **개인 정보 보호 및 메시지**에서 유럽 동의 메시지 켜기 |
 | 3 | 사용자 | **광고 → 광고 단위 기준 → 디스플레이 광고**로 광고 단위 3개를 만들고 ID 전달: 박물관 핀보드용, 박물관 도록·야간용, 창고 타이쿤 사이드바용 |
-| 4 | 에이전트 | `gh variable set`으로 입력. `BranKein/vive-museum`: `ADSENSE_CLIENT=ca-pub-6463808305479933`, `ADSENSE_SLOT_INFEED`(핀보드), `ADSENSE_SLOT_DISPLAY`(도록·야간). `BranKein/vive-warehouse-tycoon`: `ADSENSE_CLIENT`(같은 값), `ADSENSE_SLOT_SIDEBAR` |
+| 4 | 에이전트 | `gh variable set`으로 입력. `BranKein/vibe-museum`: `ADSENSE_CLIENT=ca-pub-6463808305479933`, `ADSENSE_SLOT_INFEED`(핀보드), `ADSENSE_SLOT_DISPLAY`(도록·야간). `BranKein/vibe-warehouse-tycoon`: `ADSENSE_CLIENT`(같은 값), `ADSENSE_SLOT_SIDEBAR` |
 | 5 | 에이전트 | 사용자에게 확인받고 배포 태그 push: 박물관 `v0.0.5`, `warehouse-tycoon` `v1.0.8`(그 사이 다른 배포가 있었으면 다음 번호) |
 | 6 | 에이전트 | 배포 뒤 실제 사이트에서 스크립트·칸이 들어갔는지, 콘솔 에러가 없는지 확인. 실제 광고가 채워지기까지는 몇 시간 걸릴 수 있다 |
 

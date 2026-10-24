@@ -3,7 +3,7 @@
 - 상태: 구현 중
 - 작성일: 2026-10-20
 - 주소: https://yeonhyuk.me (v0.0.1, 2026-10-20 배포)
-- 저장소: https://github.com/BranKein/vive-home (`projects/home`)
+- 저장소: https://github.com/BranKein/vibe-home (`projects/home`)
 - 전시 제목: 소개 페이지
 - 전시 설명: yeonhyuk.me 첫 화면. 만든 사람과 프로젝트들을 소개하고, 개인정보처리방침과 연락처를 둔다.
 - 영어 제목: Home
@@ -25,7 +25,7 @@
 
 - 내용: 본인 소개, 프로젝트 링크(박물관과 같은 원천: `.gitmodules`, `deploy/exhibit.json`), 개인정보처리방침(쿠키·광고·분석 고지), 연락처. 한영 병기.
 - 파일: `index.html`, `privacy.html`, `ads.txt`, `robots.txt`, `sitemap.xml`. SEO는 [docs/seo.md](../docs/seo.md)대로.
-- 인프라: vive-infra `modules/static-site`에 루트(apex) 도메인 지원을 더하고 `sites/home`을 만든다.
+- 인프라: vibe-infra `modules/static-site`에 루트(apex) 도메인 지원을 더하고 `sites/home`을 만든다.
 - 이 사이트 자체에는 광고를 넣지 않는다.
 
 ## 미정 사항
