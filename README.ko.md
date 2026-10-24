@@ -6,9 +6,9 @@
 
 떠오른 아이디어를 먼저 글로 적어두고, 그중 만들고 싶은 것을 AI 코딩 에이전트(Claude Code)와 함께 구현합니다. 구현한 프로젝트는 각자 독립된 저장소로 두고, 이 저장소에서는 git submodule로 참조합니다.
 
-만든 프로젝트들은 [바이브 뮤지엄](https://vive-museum.yeonhyuk.me)에서 한눈에 둘러볼 수 있습니다.
+만든 프로젝트들은 [바이브 뮤지엄](https://vibe-museum.yeonhyuk.me)에서 한눈에 둘러볼 수 있습니다.
 
-| [창고 타이쿤](https://warehouse-tycoon.yeonhyuk.me/ko/) | [바이브 뮤지엄](https://vive-museum.yeonhyuk.me) |
+| [창고 타이쿤](https://warehouse-tycoon.yeonhyuk.me/ko/) | [바이브 뮤지엄](https://vibe-museum.yeonhyuk.me) |
 |---|---|
 | ![창고 타이쿤](https://raw.githubusercontent.com/BranKein/vibe-warehouse-tycoon/main/deploy/thumbnail.jpg) | ![바이브 뮤지엄](https://raw.githubusercontent.com/BranKein/vibe-museum/main/docs/screenshots/pinboard-ko.jpg) |
 
@@ -25,7 +25,7 @@
 | [warehouse-tycoon](https://github.com/BranKein/vibe-warehouse-tycoon) | 완료 | 창고를 소재로 한 웹 기반 3D 방치형 타이쿤 게임. [플레이하기](https://warehouse-tycoon.yeonhyuk.me/ko/) |
 | infra (비공개) | 완료 | 프로젝트들을 AWS에 띄우는 Terraform 코드 |
 | [home](https://github.com/BranKein/vibe-home) | 구현 중 | 만든 사람과 프로젝트 소개. [yeonhyuk.me](https://yeonhyuk.me) |
-| [museum](https://github.com/BranKein/vibe-museum) | 구현 중 | 이 저장소의 프로젝트들을 네 가지 전시관으로 둘러보는 박물관 사이트. [둘러보기](https://vive-museum.yeonhyuk.me) |
+| [museum](https://github.com/BranKein/vibe-museum) | 구현 중 | 이 저장소의 프로젝트들을 네 가지 전시관으로 둘러보는 박물관 사이트. [둘러보기](https://vibe-museum.yeonhyuk.me) |
 
 ## 아이디어
 

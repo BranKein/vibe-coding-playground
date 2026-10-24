@@ -6,9 +6,9 @@ A home for small projects built by vibe coding.
 
 Ideas are written down first, and the ones worth building are implemented together with an AI coding agent (Claude Code). Each finished project lives in its own repository and is referenced here as a git submodule.
 
-You can browse everything built so far at the [Vibe Museum](https://vive-museum.yeonhyuk.me).
+You can browse everything built so far at the [Vibe Museum](https://vibe-museum.yeonhyuk.me).
 
-| [Warehouse Tycoon](https://warehouse-tycoon.yeonhyuk.me/en/) | [Vibe Museum](https://vive-museum.yeonhyuk.me) |
+| [Warehouse Tycoon](https://warehouse-tycoon.yeonhyuk.me/en/) | [Vibe Museum](https://vibe-museum.yeonhyuk.me) |
 |---|---|
 | ![Warehouse Tycoon](https://raw.githubusercontent.com/BranKein/vibe-warehouse-tycoon/main/deploy/thumbnail.jpg) | ![Vibe Museum](https://raw.githubusercontent.com/BranKein/vibe-museum/main/docs/screenshots/pinboard-en.jpg) |
 
@@ -25,7 +25,7 @@ You can browse everything built so far at the [Vibe Museum](https://vive-museum.
 | [warehouse-tycoon](https://github.com/BranKein/vibe-warehouse-tycoon) | Done | A web-based 3D idle tycoon game about warehouses. [Play](https://warehouse-tycoon.yeonhyuk.me/en/) |
 | infra (private) | Done | Terraform code that puts the projects on AWS |
 | [home](https://github.com/BranKein/vibe-home) | In progress | About the maker and the projects. [yeonhyuk.me](https://yeonhyuk.me) |
-| [museum](https://github.com/BranKein/vibe-museum) | In progress | A museum site that shows this repository's projects in four different halls. [Visit](https://vive-museum.yeonhyuk.me) |
+| [museum](https://github.com/BranKein/vibe-museum) | In progress | A museum site that shows this repository's projects in four different halls. [Visit](https://vibe-museum.yeonhyuk.me) |
 
 ## Ideas
 

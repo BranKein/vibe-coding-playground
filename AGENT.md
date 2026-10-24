@@ -7,7 +7,7 @@
 1. **메인 작업공간**: 에이전트와의 작업은 기본적으로 이 폴더에서 시작한다.
 2. **루트 프로젝트**: 개별 바이브 프로젝트는 각자 독립된 저장소로 두고, 여기서는 git submodule로 참조한다.
 3. **아이디어 보관소**: 프로젝트 아이디어와 요구사항을 `ideas/`에 md 파일로 먼저 적어두고, 구현은 나중에 한다.
-4. **박물관 사이트의 목록 원천**: 하위 프로젝트들을 전시하는 박물관 사이트는 별도 저장소(`vive-museum`)에 만들고 서브모듈로 연결한다(2026-10-15 결정). 박물관은 이 저장소의 `ideas/`와 `.gitmodules`를 읽어 전시 목록을 만든다. 내용은 [ideas/project-museum-site.md](ideas/project-museum-site.md) 참고.
+4. **박물관 사이트의 목록 원천**: 하위 프로젝트들을 전시하는 박물관 사이트는 별도 저장소(`vibe-museum`)에 만들고 서브모듈로 연결한다(2026-10-15 결정). 박물관은 이 저장소의 `ideas/`와 `.gitmodules`를 읽어 전시 목록을 만든다. 내용은 [ideas/project-museum-site.md](ideas/project-museum-site.md) 참고.
 
 ## 폴더 구조
 
@@ -113,3 +113,4 @@
 - 2026-10-20: 애드센스 게시자 ID를 `home` v0.0.2(`ads.txt`, 소유 확인 태그)에 넣었고 사용자가 심사를 신청했다. 박물관·`warehouse-tycoon`에는 변수로만 켜지는 광고 칸을 만들어 push했다(배포 전). 승인 뒤 광고 단위 ID를 받아 Variables에 넣고 배포한다.
 - 2026-10-20: `warehouse-tycoon`에 Google 클라우드 저장을 붙였다(서버 없이 플레이어 Drive의 숨김 앱 폴더). Apple(iCloud)도 어댑터 하나로 붙일 수 있게 구조를 잡았다. 실제 Google로 새로고침·기록 삭제·만료·해제까지 시험했고 v1.1.0으로 배포했다. 사용자가 Google 동의 화면을 프로덕션으로 게시해 누구나 연결할 수 있다.
 - 2026-10-24: `warehouse-tycoon` v1.1.1에서 언어마다 주소를 나눴다(`/ko/`, `/en/`, 한 언어 제목·설명, hreflang, 루트는 마지막 언어로 이동). 하위 도메인 대신 경로를 고른 이유는 세이브(로컬 저장)가 출처마다 따로라서다. 같은 날 저장소 다섯 개의 이름을 `vive-`에서 `vibe-`로 바꿨다(사용자가 GitHub에서). bootstrap의 OIDC 신뢰 정책은 옛 이름과 새 이름을 모두 받고(vibe-infra#6), 새 이름으로 apply가 도는 것을 `warehouse-tycoon` v1.1.2 배포로 확인했다. 박물관 도메인·스택 이름 변경은 따로 진행 중이다(vibe-infra#7). 이 폴더 이름(`vive-coding-playground`)은 아직 그대로다.
+- 2026-10-24: 박물관 이름을 vive에서 vibe로 바꿨다(저장소 `BranKein/vibe-museum`, 주소 `vibe-museum.yeonhyuk.me`, AWS 스택 `sites/vibe-museum`·`sites/vibe-museum-ideas`). v0.0.5로 새 주소에 배포했고 아이디어 데이터와 비밀 값을 옮겼다. 옛 아이디어 스택은 지웠고(vibe-infra#8), 옛 사이트 삭제(#9)와 옛 주소의 301 리다이렉트(#10)는 병합을 기다린다. `home` v0.0.4도 새 주소로 링크한다.
