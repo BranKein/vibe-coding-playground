@@ -24,7 +24,7 @@ You can browse everything built so far at the [Vibe Museum](https://vibe-museum.
 |---|---|---|
 | [warehouse-tycoon](https://github.com/BranKein/vibe-warehouse-tycoon) | Done | A web-based 3D idle tycoon game about warehouses. [Play](https://warehouse-tycoon.yeonhyuk.me/en/) |
 | infra (private) | Done | Terraform code that puts the projects on AWS |
-| [home](https://github.com/BranKein/vibe-home) | In progress | About the maker and the projects. [yeonhyuk.me](https://yeonhyuk.me) |
+| [home](https://github.com/BranKein/vibe-home) | Done | About the maker and the projects. [yeonhyuk.me](https://yeonhyuk.me) |
 | [museum](https://github.com/BranKein/vibe-museum) | In progress | A museum site that shows this repository's projects in four different halls. [Visit](https://vibe-museum.yeonhyuk.me) |
 
 ## Ideas
@@ -33,7 +33,7 @@ The idea documents are written in Korean.
 
 | Idea | Status | Description |
 |---|---|---|
-| [Home site for the root domain](ideas/home-site.md) | In progress | The front page of `yeonhyuk.me`, introducing the maker and the projects |
+| [Home site for the root domain](ideas/home-site.md) | Done | The front page of `yeonhyuk.me`, introducing the maker and the projects |
 | [iKeyboard & iMouse](ideas/ikeyboard-imouse.md) | Idea | An experiment that reads hand movements on a desk with a camera and turns them into virtual keyboard and mouse input |
 | [Periodic coding problems with subscriptions](ideas/periodic-coding-problems.md) | Idea | Generates coding and SQL problems on a schedule and emails subscribers |
 | [Terraform infrastructure for AWS](ideas/aws-terraform-infra.md) | Done | Keeps the Terraform code that puts the other projects on AWS in one place |

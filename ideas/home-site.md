@@ -1,6 +1,6 @@
 # 루트 도메인 소개 사이트
 
-- 상태: 구현 중
+- 상태: 완료
 - 작성일: 2026-10-20
 - 주소: https://yeonhyuk.me (v0.0.1, 2026-10-20 배포)
 - 저장소: https://github.com/BranKein/vibe-home (`projects/home`)
