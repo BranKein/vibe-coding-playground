@@ -2,7 +2,7 @@
 
 - 상태: 완료
 - 작성일: 2026-10-20
-- 주소: https://yeonhyuk.me (v0.0.1, 2026-10-20 배포)
+- 주소: https://yeonhyuk.me (v0.0.1, 2026-10-20 첫 배포. v1.0.0, 2026-10-31 배포)
 - 저장소: https://github.com/BranKein/vibe-home (`projects/home`)
 - 전시 제목: 소개 페이지
 - 전시 설명: yeonhyuk.me 첫 화면. 만든 사람과 프로젝트들을 소개하고, 개인정보처리방침과 연락처를 둔다.
